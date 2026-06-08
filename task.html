@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+    <h2>Profile Settings</h2>
+
+    <form id="profileForm">
+        <label>Full Name</label>
+        <input type="text" id="fullname" oninput="validateName()">
+        <div class="error" id="nameError"></div>
+
+        <label>CNIC</label>
+        <input type="text" id="cnic" placeholder="12345-1234567-1" oninput="validateCNIC()">
+        <div class="error" id="cnicError"></div>
+
+        <label>Mobile Number</label>
+        <input type="text" id="mobile" placeholder="03XX-XXXXXXX" oninput="validateMobile()">
+        <div class="error" id="mobileError"></div>
+
+        <label>Website URL</label>
+        <input type="text" id="website" placeholder="https://example.com" oninput="validateWebsite()">
+        <div class="error" id="websiteError"></div>
+        <button type="submit">Submit</button>
+
+        <div class="success" id="successMessage"></div>
+
+    </form>
+</div>
+</body>
+</html>
